@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/feather/feather.css" />
+    <link rel="stylesheet" href="./assets/libs/flatpickr/dist/flatpickr.min.css" />
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css" />
+
+    <link rel="icon" type="image/png" href="https://app.pooltogether.com/favicon.png"/><meta name="theme-color" content="#2E0F73"/><meta name="description" content="A new way to save and win. PoolTogether is the no-loss savings game powered by audited, secure smart contracts"/><meta name="keywords" content="ethereum"/><meta name="author" content="PoolTogether LLC"/><meta name="copyright" content="Copyright 2020"/><meta property="og:title" content="PoolTogether - App"/><meta property="og:description" content="A new way to save and win. PoolTogether is the no-loss savings game powered by audited, secure smart contracts"/><meta property="og:site_name" content="PoolTogether - App"/><meta property="og:url" content="https://app.pooltogether.com"/><meta property="og:type" content="website"/><meta property="og:image" content="https://app.pooltogether.com/facebook_share_image_1200x630.png"/><meta property="og:rich_attachment" content="true"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="twitter:title" content="PoolTogether - App"/><meta property="twitter:card" content="summary_large_image"/><meta property="twitter:site" content="@PoolTogether_"/><meta property="twitter:image:src" content="https://app.pooltogether.com/twitter_share_image_800_418.png"/><meta property="twitter:url" content="https://app.pooltogether.com"/><meta property="twitter:creator" content="@PoolTogether_"/>
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme-dark.min.css">
+    <!-- Title -->
+    <title>PoolTogether - Get started</title>
+
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    <!-- Modal: create wallet -->
+    <!-- IDEA: modal depositMoney -->
+    <div class="modal fade fixed-right" id="onboarding-0" tabindex="-1" role="dialog" aria-labelledby="onboarding-0" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+        <div class="modal-content bg-violet">
+          <div class="modal-body p-lg-0">
+            <div class="d-inline-block w-lg-60">
+              <button class="btn btn-link text-white position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-arrow-left h2"></i>
+              </button>
+              <div class="row justify-content-center">
+                <div class="col col-lg-8 py-4">
+                  <!-- Header -->
+                  <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+
+                      <!-- Pretitle -->
+                      <h6 class="mb-4 text-uppercase text-lilac">
+                        Step 1 of 2
+                      </h6>
+
+                      <!-- Title -->
+                      <h1 class="mb-3">
+                        Let’s start with the basics
+                      </h1>
+
+                      <!-- Subtitle -->
+                      <p class="mb-5 text-lilac">
+                        The simplest way to access PoolTogether is to create a wallet with Argent wallet. Learn why in our <a class="text-white" href="#faq">FAQ</a>.
+                      </p>
+
+                    </div>
+                  </div> <!-- / .row -->
+
+                  <div class="avatar avatar-lg d-block mx-auto mb-4">
+                    <img src="assets/img/argent-animated-logo.gif" class="avatar-img rounded-circle" alt="Argent logo">
+                  </div>
+                  <p class="text-lilac text-center small">Download the app</p>
+                  <div class="row no-gutters align-items-center justify-content-center mx-n3 mb-5">
+                    <div class="col-auto col-lg-auto mb-lg-0">
+                      <a href="https://apps.apple.com/us/app/argent/id1358741926" target="_blank">
+                        <img class="lift d-none d-lg-block" src="assets/img/btn_app-store.svg" alt="" height="48">
+                        <img class="lift d-block d-lg-none mx-auto" src="assets/img/btn_app-store.svg" alt="" height="40">
+                      </a>
+                    </div>
+                    <div class="col-auto col-lg-auto pl-2 pl-lg-3">
+                      <a href="https://play.google.com/store/apps/details?id=im.argent.contractwalletclient" target="_blank">
+                        <img class="lift d-none d-lg-block" src="assets/img/btn_play-store.svg" alt="" height="48">
+                        <img class="lift d-block d-lg-none mx-auto" src="assets/img/btn_play-store.svg" alt="" height="40">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="list-group list-group-flush d-block d-lg-none">
+                    <div class="list-group-item border-0">
+                      <div class="row">
+                        <div class="col-auto">
+
+                          <!-- Avatar -->
+                          <div class="avatar avatar-sm">
+                            <div class="avatar-title font-size-lg rounded-circle text-white">
+                              <i class="fe fe-shield"></i>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="col ml-n2">
+
+                          <!-- Heading -->
+                          <p class="mb-0 text-white">
+                            PoolTogether exists on the <a class="text-decoration-underline text-white" href="https://ethereum.org/" target="_blank">Ethereum blockchain</a>, which uses similar technology to Bitcoin to guarantee that ownership and control of your tickets rest with you. To interact with the Ethereum blockchain, you need a wallet like Argent.
+                          </p>
+
+                        </div>
+                      </div> <!-- / .row -->
+                    </div>
+                    <div class="list-group-item border-0">
+                      <div class="row">
+                        <div class="col-auto">
+
+                          <!-- Avatar -->
+                          <div class="avatar avatar-sm">
+                            <div class="avatar-title font-size-lg rounded-circle text-white">
+                              <i class="fe fe-smartphone"></i>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="col ml-n2">
+
+                          <!-- Heading -->
+                          <p class="mb-0 text-white">
+                            Transactions related to your PoolTogether tickets purchased on Ethereum cost “gas”, which are micro amounts of Ethereum’s native cryptocurrency (Ether). Since most new users do not have Ether already, we strongly invite you to use <a class="text-decoration-underline text-white" href="http://argent.xyz/" target="_blank">Argent wallet</a> that will cover your cost of gas while using PoolTogether. (Using other <a class="text-decoration-underline text-white" href="https://ethereum.org/wallets/" target="_blank">Ethereum wallets</a> may require you to pay for gas costs yourselves).
+                          </p>
+
+                        </div>
+                      </div> <!-- / .row -->
+                    </div>
+                  </div>
+
+                  <!-- Divider -->
+                  <hr class="my-5">
+
+                  <!-- Footer -->
+                  <div class="row align-items-center mb-6">
+                    <div class="col-auto">
+
+                      <!-- Button -->
+                      <button class="btn btn-lg btn-white" type="button" name="button" data-dismiss="modal" aria-label="Close">Cancel</button>
+
+                    </div>
+                    <div class="col text-center">
+
+                      <!-- Step -->
+                      <h6 class="text-uppercase text-lilac mb-0 d-none d-lg-block">Step 1 of 2</h6>
+
+                    </div>
+                    <div class="col-auto">
+
+                      <!-- Button -->
+                      <a class="btn btn-lg bg-soft-success text-dark" href="#" data-toggle="modal" data-target="#onboarding-1">Done</a>
+
+                    </div>
+                  </div>
+                  <h2 id="faq">Frequently Asked Questions</h2>
+                  <div class="card card-inactive mb-6">
+                    <div class="card-body">
+                      <h3>What does blockchain technology mean?</h3>
+                      <p class="text-lilac mb-4">PoolTogether exists on the <a class="text-white" href="https://ethereum.org/" target="_blank">Ethereum blockchain</a>, which uses similar technology to Bitcoin to guarantee that ownership and control of your tickets rest with you.</p>
+                      <h3>Why the Ethereum blockchain?</h3>
+                      <p class="text-lilac mb-4">Ethereum is a general-purpose blockchain with smart contracts that enable programmable tokens, like Pool DAI (plDAI), which represents your DAI holdings in PoolTogether.</p>
+                      <h3>How is this built?</h3>
+                      <p class="text-lilac">On Ethereum, PoolTogether is run by a suite of smart contracts that manage balances, tickets purchase, and distribution of prizes. The smart contracts also leverage existing parts of the Ethereum ecosystem, such as ERC-20 token standards and lending protocols like <a class="text-white" href="https://compound.finance/" target="_blank">Compound</a>.</p>
+                      <p class="text-lilac mb-4">PoolTogether smart contracts are audited and secured by <a class="text-white" href="https://www.pooltogether.com/audits">QuantStamp & Open Zeppelin</a>.</p>
+                      <h3>What is gas, and who’s paying for it?</h3>
+                      <p class="text-lilac mb-4">Transactions related to your PoolTogether tickets purchased on Ethereum cost “gas”, which are micro amounts of Ethereum’s native cryptocurrency (Ether). Since most new users do not have Ether already, we strongly invite you to use <a class="text-white" href="http://argent.xyz/" target="_blank">Argent wallet</a> that will cover your cost of gas while using PoolTogether. (Using other <a class="text-white" href="https://ethereum.org/wallets/" target="_blank">Ethereum wallets</a> may require you to pay for gas costs yourselves).</p>
+                      <h3>What is "DAI" or "USDC" stablecoin?</h3>
+                      <p class="text-lilac mb-4">Dai or USDC is the name of the cryptocurrency you use to join a “Pool” on PoolTogether. The important thing to know about them is that they're pegged to the value of the US Dollar. So 1 Dai = 1 US Dollar. You may have heard about “Bitcoin” and how the price changes a lot. DAI and USDC are designed to be the exact opposite. The price is designed to always equal 1 US Dollar. The price does sometimes change by a penny or two but for practical purposes just assume 1 Dai = 1 Digital US Dollar.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+              <div class="bg-white vh-100 p-4">
+                <div class="row justify-content-center">
+                  <div class="col-10">
+                    <h2 class="text-dark">On the blockchain</h2>
+                    <div class="list-group list-group-flush">
+                      <div class="list-group-item border-0">
+                        <div class="row">
+                          <div class="col-auto">
+
+                            <!-- Avatar -->
+                            <div class="avatar avatar-sm">
+                              <div class="avatar-title font-size-lg rounded-circle text-white">
+                                <i class="fe fe-shield"></i>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="col ml-n2">
+
+                            <!-- Heading -->
+                            <p class="mb-0 text-secondary">
+                              PoolTogether exists on the <a href="https://ethereum.org/" target="_blank">Ethereum blockchain</a>, which uses similar technology to Bitcoin to guarantee that ownership and control of your tickets rest with you. To interact with the Ethereum blockchain, you need a wallet like Argent.
+                            </p>
+
+                          </div>
+                        </div> <!-- / .row -->
+                      </div>
+                      <div class="list-group-item">
+                        <div class="row">
+                          <div class="col-auto">
+
+                            <!-- Avatar -->
+                            <div class="avatar avatar-sm">
+                              <div class="avatar-title font-size-lg rounded-circle text-white">
+                                <i class="fe fe-smartphone"></i>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="col ml-n2">
+
+                            <!-- Heading -->
+                            <p class="mb-0 text-secondary">
+                              Transactions related to your PoolTogether tickets purchased on Ethereum cost “gas”, which are micro amounts of Ethereum’s native cryptocurrency (Ether). Since most new users do not have Ether already, we strongly invite you to use <a href="http://argent.xyz/" target="_blank">Argent wallet</a> that will cover your cost of gas while using PoolTogether. (Using other <a href="https://ethereum.org/wallets/" target="_blank">Ethereum wallets</a> may require you to pay for gas costs yourselves).
+                            </p>
+
+                          </div>
+                        </div> <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- / modal -->
+
+
+    <!-- Modal: deposit money -->
+    <!-- IDEA: modal depositMoney -->
+    <div class="modal fade fixed-right" id="onboarding-1" tabindex="-1" role="dialog" aria-labelledby="onboarding-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+        <div class="modal-content bg-violet">
+          <div class="modal-body p-lg-0">
+            <div class="d-inline-block w-lg-60">
+              <button class="btn btn-link text-white position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-arrow-left h2"></i>
+              </button>
+              <div class="row justify-content-center">
+                <div class="col col-lg-8 py-4">
+                  <!-- Header -->
+                  <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+
+                      <!-- Pretitle -->
+                      <h6 class="mb-4 text-uppercase text-lilac">
+                        Step 2 of 2
+                      </h6>
+
+                      <!-- Title -->
+                      <h1 class="mb-3">
+                        Top up your wallet with digital dollars
+                      </h1>
+
+                      <!-- Subtitle -->
+                      <p class="mb-5 text-lilac">
+                        Buying PoolTogether tickets requires DAI or USDC stablecoin. Both of them are digital representations of the US dollar on the Ethereum blockchain. Learn more in our <a class="text-white" href="#faq1">FAQ</a>.
+                      </p>
+
+                    </div>
+                  </div> <!-- / .row -->
+                  <iframe class="w-100 vh-100 rounded mb-3 mb-lg-3 border-0" id="moonpay" allow="accelerometer; autoplay; camera; gyroscope; payment" title="Send Ether to this address" src="https://buy.moonpay.io?apiKey=pk_live_GaguyM1nApoXIy3KGTr9slDBelaYRzrh&amp;hideLogo=true&amp;colorCode=%235029AB&amp;walletAddresses=%7B&quot;eth&quot;%3A&quot;0x3e5078EB44ddb57B9785359268C8Eab208E3b666&quot;%7D"><p>Your browser does not support iframes.</p></iframe>
+                  <h6 class="text-uppercase text-lilac mb-3 text-center">
+                    Or
+                  </h6>
+                  <div class="row justify-content-center mb-5 mb-lg-0 w-75 mx-auto">
+                    <button class="btn btn-primary mb-3 btn-block" id='buy'>Buy via <img src="assets/img/WyreLogoColor.svg" alt="" height="24"></button> <a class="btn btn-dark btn-block" href="https://www.argent.xyz/" target="_blank">Buy via <img src="assets/img/argent-logo.svg" alt="" height="24"></a>
+                  </div>
+                  <div id="wyre-dropin-widget-container"></div>
+
+                  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                  <script src="https://verify.sendwyre.com/js/verify-module-init-beta.js"></script>
+                  <script type="text/javascript">
+                      (function($) {
+
+                          // debit card popup
+                          var widget = new Wyre({
+                              env: 'test',
+                              operation: {
+                                  type: 'debitcard-hosted-dialog',
+                                  dest: "ethereum:0x98B031783d0efb1E65C4072C6576BaCa0736A912",
+                                  destCurrency: "ETH",
+                                  sourceAmount: 10.0,
+                                  paymentMethod: 'debit-card'
+                              }
+                          });
+
+                          widget.on("exit", function (e) {
+                              console.log("exit", e);
+                          })
+
+                          widget.on("error", function (e) {
+                              console.log("error", e);
+                          })
+
+                          widget.on("complete", function (e) {
+                              console.log("complete", e );
+                          });
+
+                          widget.on('ready', function(e) {
+                              console.log("ready", e );
+                              // widget.open();
+                          })
+
+                          $('#buy').click(function(){
+                              console.log('open')
+                              widget.open();
+                          })
+
+                      })(jQuery);
+                  </script>
+                  <div class="list-group list-group-flush d-block d-lg-none">
+                    <div class="list-group-item border-0">
+                      <div class="row">
+                        <div class="col-auto">
+
+                          <!-- Avatar -->
+                          <div class="avatar avatar-sm">
+                            <div class="avatar-title font-size-lg rounded-circle text-white">
+                              <i class="fe fe-dollar-sign"></i>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="col ml-n2">
+                          <!-- Heading -->
+                          <p class="mb-0 text-white">
+                            Dai or USDC is the name of the cryptocurrency you use to join a “Pool” on PoolTogether. The important thing to know about them is that they're pegged to the value of the US Dollar. So 1 Dai = 1 US Dollar.
+                          </p>
+
+                        </div>
+                      </div> <!-- / .row -->
+                    </div>
+                    <div class="list-group-item border-0">
+                      <div class="row">
+                        <div class="col-auto">
+
+                          <!-- Avatar -->
+                          <div class="avatar avatar-sm">
+                            <div class="avatar-title font-size-lg rounded-circle text-white">
+                              <i class="fe fe-check"></i>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="col ml-n2">
+
+                          <!-- Heading -->
+                          <p class="mb-0 text-white">
+                            Now that you have digital dollars and your wallet you can join a Pool on PoolTogether! Once you are on the PoolTogether website just tap “Join Pool” and you’ll get walked through the steps to join!
+                          </p>
+
+                        </div>
+                      </div> <!-- / .row -->
+                    </div>
+                  </div>
+                  <!-- Divider -->
+                  <hr class="my-5">
+
+                  <!-- Footer -->
+                  <div class="row align-items-center mb-6">
+                    <div class="col-auto">
+
+                      <!-- Button -->
+                      <button class="btn btn-lg btn-white" type="button" name="button" data-dismiss="modal" aria-label="Close">Cancel</button>
+
+                    </div>
+                    <div class="col text-center">
+
+                      <!-- Step -->
+                      <h6 class="text-uppercase text-lilac mb-0 d-none d-lg-block">Step 2 of 2</h6>
+
+                    </div>
+                    <div class="col-auto">
+
+                      <!-- Button -->
+                      <a class="btn btn-lg bg-soft-success text-dark" href="https://app.pooltogether.com/" target="_blank">Hop in 🏊</a>
+
+                    </div>
+                  </div>
+
+                  <h2 id="faq1">Frequently Asked Questions</h2>
+                  <div class="card card-inactive mb-6">
+                    <div class="card-body">
+                      <h3>What does blockchain technology mean?</h3>
+                      <p class="text-lilac mb-4">PoolTogether exists on the <a class="text-white" href="https://ethereum.org/" target="_blank">Ethereum blockchain</a>, which uses similar technology to Bitcoin to guarantee that ownership and control of your tickets rest with you.</p>
+                      <h3>Why the Ethereum blockchain?</h3>
+                      <p class="text-lilac mb-4">Ethereum is a general-purpose blockchain with smart contracts that enable programmable tokens, like Pool DAI (plDAI), which represents your DAI holdings in PoolTogether.</p>
+                      <h3>How is this built?</h3>
+                      <p class="text-lilac">On Ethereum, PoolTogether is run by a suite of smart contracts that manage balances, tickets purchase, and distribution of prizes. The smart contracts also leverage existing parts of the Ethereum ecosystem, such as ERC-20 token standards and lending protocols like <a class="text-white" href="https://compound.finance/" target="_blank">Compound</a>.</p>
+                      <p class="text-lilac mb-4">PoolTogether smart contracts are audited and secured by <a class="text-white" href="https://www.pooltogether.com/audits">QuantStamp & Open Zeppelin</a>.</p>
+                      <h3>What is gas, and who’s paying for it?</h3>
+                      <p class="text-lilac mb-4">Transactions related to your PoolTogether tickets purchased on Ethereum cost “gas”, which are micro amounts of Ethereum’s native cryptocurrency (Ether). Since most new users do not have Ether already, we strongly invite you to use <a class="text-white" href="http://argent.xyz/" target="_blank">Argent wallet</a> that will cover your cost of gas while using PoolTogether. (Using other <a class="text-white" href="https://ethereum.org/wallets/" target="_blank">Ethereum wallets</a> may require you to pay for gas costs yourselves).</p>
+                      <h3>What is "DAI" or "USDC" stablecoin?</h3>
+                      <p class="text-lilac mb-4">Dai or USDC is the name of the cryptocurrency you use to join a “Pool” on PoolTogether. The important thing to know about them is that they're pegged to the value of the US Dollar. So 1 Dai = 1 US Dollar. You may have heard about “Bitcoin” and how the price changes a lot. DAI and USDC are designed to be the exact opposite. The price is designed to always equal 1 US Dollar. The price does sometimes change by a penny or two but for practical purposes just assume 1 Dai = 1 Digital US Dollar.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+              <div class="bg-white vh-100 p-4">
+                <div class="row justify-content-center">
+                  <div class="col-10">
+                    <h2 class="text-dark">So what the heck is "DAI" or "USDC" stablecoin?</h2>
+                    <div class="list-group list-group-flush">
+                      <div class="list-group-item border-0">
+                        <div class="row">
+                          <div class="col-auto">
+
+                            <!-- Avatar -->
+                            <div class="avatar avatar-sm">
+                              <div class="avatar-title font-size-lg rounded-circle text-white">
+                                <i class="fe fe-dollar-sign"></i>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="col ml-n2">
+                            <!-- Heading -->
+                            <p class="mb-0 text-secondary">
+                              Dai or USDC is the name of the cryptocurrency you use to join a “Pool” on PoolTogether. The important thing to know about them is that they're pegged to the value of the US Dollar. So 1 Dai = 1 US Dollar.
+                            </p>
+
+                          </div>
+                        </div> <!-- / .row -->
+                      </div>
+                      <div class="list-group-item">
+                        <div class="row">
+                          <div class="col-auto">
+
+                            <!-- Avatar -->
+                            <div class="avatar avatar-sm">
+                              <div class="avatar-title font-size-lg rounded-circle text-white">
+                                <i class="fe fe-check"></i>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="col ml-n2">
+
+                            <!-- Heading -->
+                            <p class="mb-0 text-secondary">
+                              Now that you have digital dollars and your wallet you can join a Pool on PoolTogether! Once you are on the PoolTogether website just tap “Join Pool” and you’ll get walked through the steps to join!
+                            </p>
+
+                          </div>
+                        </div> <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- / modal -->
+
+
+    <!-- Modal: video -->
+    <!-- IDEA: modal video -->
+    <div class="modal fade fixed-right" id="video" tabindex="-1" role="dialog" aria-labelledby="video" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical" role="document">
+        <div class="modal-content bg-violet">
+          <div class="modal-body p-0 m-0">
+            <button type="button" class="btn btn-white btn-lg btn-rounded-circle text-dark position-absolute m-2" data-dismiss="modal" aria-label="Close">
+              <span class="fe fe-x text-white" aria-hidden="true"></span>
+            </button>
+            <iframe class="border-0" width="100%" height="100%" src=""></iframe>
+          </div>
+        </div>
+      </div>
+    </div><!-- / modal -->
+
+
+
+    <nav class="navbar border-0">
+      <div class="container justify-content-between">
+        <a href="https://app.pooltogether.com/">
+          <img class="d-none d-lg-flex" src="assets/img/pool-together--white-logo.svg" alt="pool-together--white-logo" height="48">
+          <img class="d-flex d-lg-none" src="assets/img/pool-together--white-symbol-101.svg" alt="pool-together--white-symbol" height="48">
+        </a>
+        <a class="btn btn-white p-lg-0 pr-lg-3 rounded-xl d-flex align-items-center lift" href="https://app.pooltogether.com/" target="_blank">
+          <div class="avatar avatar-sm avatar-online mr-3 d-none d-lg-flex">
+            <img src="assets/img/pool-together--white-symbol.svg" class="avatar-img rounded-circle" alt="pool-together--white-symbol">
+          </div>
+          Launch App <i class="fe fe-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content">
+
+      <!-- HEADER -->
+      <div class="header border-0 mb-6">
+        <div class="container">
+
+          <!-- Body -->
+          <div class="header-body pb-6">
+            <div class="row">
+              <div class="col">
+                <!-- Title -->
+                <h1 class="header-title display-3 mt-4 mb-2 text-center text-lg-left d-none d-lg-block">
+                  PoolTogether is a no loss savings game powered by blockchain technology
+                </h1>
+                <h1 class="header-title display-4 mt-4 mb-4 text-center text-lg-left d-block d-lg-none">
+                  PoolTogether is a no loss savings game powered by blockchain technology
+                </h1>
+                <p class="lead text-lilac text-center text-lg-left mb-4">Buy tickets with digital dollars for a chance to win a weekly or daily prize.</p>
+                <div class="row my-5">
+                  <div class="col-6 text-center text-lg-left">
+                    <!-- Title -->
+                    <h6 class="text-uppercase text-lilac mb-2">
+                      Friday's Prize Est.
+                    </h6>
+
+                    <!-- Heading -->
+                    <span class="h2 text-soft-success mb-0 mr-2">
+                      $163.00 USD
+                    </span>
+                  </div>
+                  <div class="col-6 text-center text-lg-left">
+                    <!-- Title -->
+                    <h6 class="text-uppercase text-lilac mb-2">
+                      Daily's Prize Est.
+                    </h6>
+
+                    <!-- Heading -->
+                    <span class="h2 text-soft-success mb-0 mr-2">
+                      $5.00 USD
+                    </span>
+                  </div>
+                </div>
+                <h2 class="text-center text-lg-left">Get started for free</h2>
+                <div class="row justify-content-center justify-content-lg-start">
+                  <div class="col-6 col-lg">
+                    <a href="#" data-toggle="modal" data-target="#onboarding-0">
+                      <div class="card lift" style="min-height: 104px">
+                        <div class="card-body text-center p-3">
+                          <div class="btn btn-rounded-circle bg-violet mb-3">
+                            <img src="assets/img/account_balance_wallet-white-18dp.svg" alt="">
+                          </div>
+                          <h2 class="h4 mb-0 text-white">
+                            Create your wallet
+                          </h2>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-6 col-lg">
+                    <a class="lift" href="#" data-toggle="modal" data-target="#onboarding-1">
+                      <div class="card lift" style="min-height: 104px">
+                        <div class="card-body p-3 text-center">
+                          <div class="btn btn-rounded-circle bg-orange mb-3">
+                            <i class="fe fe-dollar-sign text-dark"></i>
+                          </div>
+                          <h2 class="h4 mb-0 text-white">
+                            Buy digital dollars
+                          </h2>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <p class="text-center text-lg-left text-lilac align-items-center mb-5 mb-lg-0">I'm ready to join the pool, <a class="text-white" href="https://app.pooltogether.com/" target="_blank">hop in <i class="fe fe-arrow-right align-self-bottom mr-2"></i></a> </p>
+              </div>
+              <div class="col-12 col-md-5 offset-lg-1 d-flex justify-content-center align-items-center" style="min-height: 300px; background-image: url(assets/img/pool-therealone.svg);background-repeat: no-repeat; background-size: contain;background-position:center">
+                <a class="btn btn-lg btn-white-opacity btn-rounded-circle mt-n6 mt-lg-n6 align-items-center d-flex justify-content-center lift" href="#" data-toggle="modal" data-target="#video" data-theVideo="https://www.youtube.com/embed/oJtewzf4sf8">
+                  <i class="fe fe-play display-3"></i>
+                </a>
+              </div>
+            </div> <!-- / .row -->
+          </div> <!-- / .header-body -->
+
+        </div>
+      </div> <!-- / .header -->
+
+      <!-- CARDS -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 text-center">
+            <h2 class="display-3 d-none d-lg-block">How does it work?</h2>
+            <h2 class="display-4 d-block d-lg-none">How does it work?</h2>
+            <p class="lead text-lilac mb-6">Buy tickets with digital dollars. Then, wait the prize announcement to know if you are the lucky person who won all of the interest that accrued in the pool!. More details in our <a class="text-white" href="https://www.pooltogether.com/faq" target="_blank">FAQ</a></p>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+            <div class="row">
+              <div class="col-auto">
+                <span class="display-1 text-light">1</span>
+              </div>
+              <div class="col">
+                <h3 class="h2 mb-2">Buy a ticket</h3>
+                <p class="text-lilac">Buy a PoolTogether ticket with <a class="text-white" href="https://makerdao.com/" target="_blank">DAI</a> or <a class="text-white" href="https://www.coinbase.com/usdc/" target="_blank">USDC</a> stablecoin. 1 DAI = 1 ticket. Buying more tickets and grouping them with other people will give you more chance of winning.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+            <div class="row">
+              <div class="col-auto">
+                <span class="display-1 text-light">2</span>
+              </div>
+              <div class="col">
+                <h3 class="h2 mb-2">Sit back and relax</h3>
+                <p class="text-lilac">You will receive Pool DAI (plDAI), which represents your DAI holdings in PoolTogether. All the plDAI in the pool earns interest to fund the next prize.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="row">
+              <div class="col-auto">
+                <span class="display-1 text-light">3</span>
+              </div>
+              <div class="col">
+                <h3 class="h2 mb-2">Never lose</h3>
+                <p class="text-lilac">Wait until the next pool prize is awarded to know if you are the lucky person who won all of the interest that accrued in the pool. Whether you win or not, you get all of your money back! You can withdraw your savings and winnings at any time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-6">
+            <h2 class="text-center text-soft-success">Ready to join the pool 🏊?</h2>
+            <h6 class="text-uppercase text-lilac mb-3 text-center">
+              Hop in
+            </h6>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-6">
+          <div class="col-auto">
+            <a class="btn btn-white p-0 pr-3 rounded-xl d-flex align-items-center lift" href="https://app.pooltogether.com/" target="_blank">
+              <div class="avatar avatar-sm avatar-online mr-3">
+                <img src="assets/img/pool-together--white-symbol.svg" class="avatar-img rounded-circle" alt="pool-together--white-symbol">
+              </div>
+              Launch App <i class="fe fe-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+        <p class="mb-5 text-lilac text-center small">PoolTogether smart contracts are audited and secured by <a class="text-white" href="https://www.pooltogether.com/audits">QuantStamp & Open Zeppelin</a>.</p>
+      </div>
+
+    </div><!-- / .main-content -->
+    <footer class="bg-malbec pt-5 pt-lg-6 pb-4">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-12 col-lg-auto mr-auto mb-5 mb-lg-0">
+            <img src="assets/img/pool-together--white-symbol.svg" class="img-fluid" alt="pool-together--white-symbol" width="48px">
+          </div>
+          <div class="col-12 col-lg-2 mb-5 mb-lg-0">
+            <h6 class="text-uppercase text-lilac mb-2">
+              Products
+            </h6>
+            <nav class="nav flex-column">
+              <a class="nav-link text-white pl-0" href="https://app.pooltogether.com">Current version</a>
+              <a class="nav-link text-white pl-0" href="https://v1.pooltogether.com">v1</a>
+            </nav>
+          </div>
+          <div class="col-12 col-lg-2 mb-5 mb-lg-0">
+            <h6 class="text-uppercase text-lilac mb-2">
+              Resources
+            </h6>
+            <nav class="nav flex-column">
+              <a class="nav-link text-white pl-0" href="https://help.pooltogether.com" title="Get answers at the help centre">Help Centre</a>
+              <a class="nav-link text-white pl-0" href="https://www.pooltogether.com/faq">FAQ</a>
+              <a class="nav-link text-white pl-0" href="https://www.pooltogether.com/audits">Security audits</a>
+              <a class="nav-link text-white pl-0" href="https://twitter.com/PoolTogether" target="_blank">Twitter</a>
+              <a class="nav-link text-white pl-0" href="https://discord.gg/hxPhPDW" target="_blank">Discord</a>
+              <a class="nav-link text-white pl-0" href="https://github.com/pooltogether" target="_blank">Github</a>
+              <a class="nav-link text-white pl-0" href="https://medium.com/pooltogether" target="_blank">Medium</a>
+            </nav>
+          </div>
+          <div class="col-12 col-lg-2 mb-5 mb-lg-0">
+            <h6 class="text-uppercase text-lilac mb-2">
+              COMPANY
+            </h6>
+            <nav class="nav flex-column">
+              <a class="nav-link text-white pl-0" href="https://www.pooltogether.com/careers">Careers</a>
+              <a class="nav-link text-white pl-0" href="https://www.pooltogether.com/brand-assets">Brand Assets</a>
+              <a class="nav-link text-white pl-0" href="https://www.pooltogether.com/terms">Terms</a>
+              <a class="nav-link text-white pl-0" href="mailto:hello@pooltogether.com">hello@pooltogether.com</a>
+            </nav>
+          </div>
+        </div>
+        <!-- Divider -->
+        <hr class="my-4 my-lg-3">
+        <div class="row justify-content-center justify-content-lg-between">
+          <div class="col-auto mb-4 mb-lg-0">
+            <span class="text-lilac">© 2020 <a class="text-lilac" href="https://www.pooltogether.com">PoolTogether Inc.</a></span>
+          </div>
+          <div class="col-auto mb-4 mb-lg-0">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-link dropdown-toggle p-0 d-flex align-items-center text-lilac" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Change region
+              </button>
+              <div class="dropdown-menu">
+                <a href="" class="dropdown-item text-white">de: Deutsch (German)</a>
+                <a href="" class="dropdown-item text-white">en: English</a>
+                <a href="" class="dropdown-item text-white">es: Español (Spanish)</a>
+                <a href="" class="dropdown-item text-white">fr: Français (French)</a>
+                <a href="" class="dropdown-item text-white">hr: Hrvatski (Croatian)</a>
+                <a href="" class="dropdown-item text-white">it: Italiana (Italian)</a>
+                <a href="" class="dropdown-item text-white">ja: 日本 (Japanese)</a>
+                <a href="" class="dropdown-item text-white">ko: 한국어 (Korean)</a>
+                <a href="" class="dropdown-item text-white">zh: 普通话 (Mandarin)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
+    <script src="./assets/libs/autosize/dist/autosize.min.js"></script>
+    <script src="./assets/libs/chart.js/dist/Chart.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <script src="./assets/libs/list.js/dist/list.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/select2/dist/js/select2.full.min.js"></script>
+    <script src="./assets/libs/chart.js/Chart.extension.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+    <script src="./assets/js/dashkit.min.js"></script>
+
+
+  </body>
+</html>

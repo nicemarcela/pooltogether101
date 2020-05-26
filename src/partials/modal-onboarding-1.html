@@ -1,0 +1,229 @@
+<!-- IDEA: modal depositMoney -->
+<div class="modal fade fixed-right" id="onboarding-1" tabindex="-1" role="dialog" aria-labelledby="onboarding-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content bg-violet">
+      <div class="modal-body p-lg-0">
+        <div class="d-inline-block w-lg-60">
+          <button class="btn btn-link text-white position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+            <i class="fe fe-arrow-left h2"></i>
+          </button>
+          <div class="row justify-content-center">
+            <div class="col col-lg-8 py-4">
+              <!-- Header -->
+              <div class="row justify-content-center">
+                <div class="col-12 text-center">
+
+                  <!-- Pretitle -->
+                  <h6 class="mb-4 text-uppercase text-lilac">
+                    Step 2 of 2
+                  </h6>
+
+                  <!-- Title -->
+                  <h1 class="mb-3">
+                    Top up your wallet with digital dollars
+                  </h1>
+
+                  <!-- Subtitle -->
+                  <p class="mb-5 text-lilac">
+                    Buying PoolTogether tickets requires DAI or USDC stablecoin. Both of them are digital representations of the US dollar on the Ethereum blockchain. Learn more in our <a class="text-white" href="#faq1">FAQ</a>.
+                  </p>
+
+                </div>
+              </div> <!-- / .row -->
+              <iframe class="w-100 vh-100 rounded mb-3 mb-lg-3 border-0" id="moonpay" allow="accelerometer; autoplay; camera; gyroscope; payment" title="Send Ether to this address" src="https://buy.moonpay.io?apiKey=pk_live_GaguyM1nApoXIy3KGTr9slDBelaYRzrh&amp;hideLogo=true&amp;colorCode=%235029AB&amp;walletAddresses=%7B&quot;eth&quot;%3A&quot;0x3e5078EB44ddb57B9785359268C8Eab208E3b666&quot;%7D"><p>Your browser does not support iframes.</p></iframe>
+              <h6 class="text-uppercase text-lilac mb-3 text-center">
+                Or
+              </h6>
+              <div class="row justify-content-center mb-5 mb-lg-0 w-75 mx-auto">
+                <button class="btn btn-primary mb-3 btn-block" id='buy'>Buy via <img src="assets/img/WyreLogoColor.svg" alt="" height="24"></button> <a class="btn btn-dark btn-block" href="https://www.argent.xyz/" target="_blank">Buy via <img src="assets/img/argent-logo.svg" alt="" height="24"></a>
+              </div>
+              <div id="wyre-dropin-widget-container"></div>
+
+              <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+              <script src="https://verify.sendwyre.com/js/verify-module-init-beta.js"></script>
+              <script type="text/javascript">
+                  (function($) {
+
+                      // debit card popup
+                      var widget = new Wyre({
+                          env: 'test',
+                          operation: {
+                              type: 'debitcard-hosted-dialog',
+                              dest: "ethereum:0x98B031783d0efb1E65C4072C6576BaCa0736A912",
+                              destCurrency: "ETH",
+                              sourceAmount: 10.0,
+                              paymentMethod: 'debit-card'
+                          }
+                      });
+
+                      widget.on("exit", function (e) {
+                          console.log("exit", e);
+                      })
+
+                      widget.on("error", function (e) {
+                          console.log("error", e);
+                      })
+
+                      widget.on("complete", function (e) {
+                          console.log("complete", e );
+                      });
+
+                      widget.on('ready', function(e) {
+                          console.log("ready", e );
+                          // widget.open();
+                      })
+
+                      $('#buy').click(function(){
+                          console.log('open')
+                          widget.open();
+                      })
+
+                  })(jQuery);
+              </script>
+              <div class="list-group list-group-flush d-block d-lg-none">
+                <div class="list-group-item border-0">
+                  <div class="row">
+                    <div class="col-auto">
+
+                      <!-- Avatar -->
+                      <div class="avatar avatar-sm">
+                        <div class="avatar-title font-size-lg rounded-circle text-white">
+                          <i class="fe fe-dollar-sign"></i>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col ml-n2">
+                      <!-- Heading -->
+                      <p class="mb-0 text-white">
+                        Dai or USDC is the name of the cryptocurrency you use to join a “Pool” on PoolTogether. The important thing to know about them is that they're pegged to the value of the US Dollar. So 1 Dai = 1 US Dollar.
+                      </p>
+
+                    </div>
+                  </div> <!-- / .row -->
+                </div>
+                <div class="list-group-item border-0">
+                  <div class="row">
+                    <div class="col-auto">
+
+                      <!-- Avatar -->
+                      <div class="avatar avatar-sm">
+                        <div class="avatar-title font-size-lg rounded-circle text-white">
+                          <i class="fe fe-check"></i>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col ml-n2">
+
+                      <!-- Heading -->
+                      <p class="mb-0 text-white">
+                        Now that you have digital dollars and your wallet you can join a Pool on PoolTogether! Once you are on the PoolTogether website just tap “Join Pool” and you’ll get walked through the steps to join!
+                      </p>
+
+                    </div>
+                  </div> <!-- / .row -->
+                </div>
+              </div>
+              <!-- Divider -->
+              <hr class="my-5">
+
+              <!-- Footer -->
+              <div class="row align-items-center mb-6">
+                <div class="col-auto">
+
+                  <!-- Button -->
+                  <button class="btn btn-lg btn-white" type="button" name="button" data-dismiss="modal" aria-label="Close">Cancel</button>
+
+                </div>
+                <div class="col text-center">
+
+                  <!-- Step -->
+                  <h6 class="text-uppercase text-lilac mb-0 d-none d-lg-block">Step 2 of 2</h6>
+
+                </div>
+                <div class="col-auto">
+
+                  <!-- Button -->
+                  <a class="btn btn-lg bg-soft-success text-dark" href="https://app.pooltogether.com/" target="_blank">Hop in 🏊</a>
+
+                </div>
+              </div>
+
+              <h2 id="faq1">Frequently Asked Questions</h2>
+              <div class="card card-inactive mb-6">
+                <div class="card-body">
+                  <h3>What does blockchain technology mean?</h3>
+                  <p class="text-lilac mb-4">PoolTogether exists on the <a class="text-white" href="https://ethereum.org/" target="_blank">Ethereum blockchain</a>, which uses similar technology to Bitcoin to guarantee that ownership and control of your tickets rest with you.</p>
+                  <h3>Why the Ethereum blockchain?</h3>
+                  <p class="text-lilac mb-4">Ethereum is a general-purpose blockchain with smart contracts that enable programmable tokens, like Pool DAI (plDAI), which represents your DAI holdings in PoolTogether.</p>
+                  <h3>How is this built?</h3>
+                  <p class="text-lilac">On Ethereum, PoolTogether is run by a suite of smart contracts that manage balances, tickets purchase, and distribution of prizes. The smart contracts also leverage existing parts of the Ethereum ecosystem, such as ERC-20 token standards and lending protocols like <a class="text-white" href="https://compound.finance/" target="_blank">Compound</a>.</p>
+                  <p class="text-lilac mb-4">PoolTogether smart contracts are audited and secured by <a class="text-white" href="https://www.pooltogether.com/audits">QuantStamp & Open Zeppelin</a>.</p>
+                  <h3>What is gas, and who’s paying for it?</h3>
+                  <p class="text-lilac mb-4">Transactions related to your PoolTogether tickets purchased on Ethereum cost “gas”, which are micro amounts of Ethereum’s native cryptocurrency (Ether). Since most new users do not have Ether already, we strongly invite you to use <a class="text-white" href="http://argent.xyz/" target="_blank">Argent wallet</a> that will cover your cost of gas while using PoolTogether. (Using other <a class="text-white" href="https://ethereum.org/wallets/" target="_blank">Ethereum wallets</a> may require you to pay for gas costs yourselves).</p>
+                  <h3>What is "DAI" or "USDC" stablecoin?</h3>
+                  <p class="text-lilac mb-4">Dai or USDC is the name of the cryptocurrency you use to join a “Pool” on PoolTogether. The important thing to know about them is that they're pegged to the value of the US Dollar. So 1 Dai = 1 US Dollar. You may have heard about “Bitcoin” and how the price changes a lot. DAI and USDC are designed to be the exact opposite. The price is designed to always equal 1 US Dollar. The price does sometimes change by a penny or two but for practical purposes just assume 1 Dai = 1 Digital US Dollar.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+          <div class="bg-white vh-100 p-4">
+            <div class="row justify-content-center">
+              <div class="col-10">
+                <h2 class="text-dark">So what the heck is "DAI" or "USDC" stablecoin?</h2>
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item border-0">
+                    <div class="row">
+                      <div class="col-auto">
+
+                        <!-- Avatar -->
+                        <div class="avatar avatar-sm">
+                          <div class="avatar-title font-size-lg rounded-circle text-white">
+                            <i class="fe fe-dollar-sign"></i>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="col ml-n2">
+                        <!-- Heading -->
+                        <p class="mb-0 text-secondary">
+                          Dai or USDC is the name of the cryptocurrency you use to join a “Pool” on PoolTogether. The important thing to know about them is that they're pegged to the value of the US Dollar. So 1 Dai = 1 US Dollar.
+                        </p>
+
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+                  <div class="list-group-item">
+                    <div class="row">
+                      <div class="col-auto">
+
+                        <!-- Avatar -->
+                        <div class="avatar avatar-sm">
+                          <div class="avatar-title font-size-lg rounded-circle text-white">
+                            <i class="fe fe-check"></i>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="col ml-n2">
+
+                        <!-- Heading -->
+                        <p class="mb-0 text-secondary">
+                          Now that you have digital dollars and your wallet you can join a Pool on PoolTogether! Once you are on the PoolTogether website just tap “Join Pool” and you’ll get walked through the steps to join!
+                        </p>
+
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal -->
